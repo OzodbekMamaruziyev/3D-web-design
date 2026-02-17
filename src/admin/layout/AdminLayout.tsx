@@ -3,7 +3,6 @@ import { useAuth } from '../auth/AuthContext';
 import {
     LayoutDashboard,
     Image,
-    Users,
     MessageSquare,
     Settings,
     LogOut,

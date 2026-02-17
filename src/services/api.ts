@@ -34,7 +34,7 @@ export interface AuthResponse {
 }
 
 // --- Auth API ---
-export const loginWithGoogle = async (googleToken: string): Promise<AuthResponse> => {
+export const loginWithGoogle = async (_googleToken: string): Promise<AuthResponse> => {
     // TODO: Replace with actual backend call
     // const response = await api.post('/auth/google', { token: googleToken });
     // return response.data;

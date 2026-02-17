@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Card, PageHeader } from '../components/UI';
 import { Users, Video, Eye, TrendingUp, Activity, Bell } from 'lucide-react';
 import { fetchDashboardData } from '../../services/api';
@@ -22,9 +22,9 @@ const StatCard = ({ icon: Icon, title, value, change }: any) => (
 const ActivityItem = ({ user, action, time, type }: any) => (
     <div className="flex items-start gap-4 p-4 rounded-xl hover:bg-white/5 transition-colors border-b border-white/5 last:border-0">
         <div className={`w-10 h-10 rounded-full flex items-center justify-center ${type === 'project' ? 'bg-blue-500/20 text-blue-500' :
-                type === 'system' ? 'bg-orange-500/20 text-orange-500' :
-                    type === 'message' ? 'bg-green-500/20 text-green-500' :
-                        'bg-purple-500/20 text-purple-500'
+            type === 'system' ? 'bg-orange-500/20 text-orange-500' :
+                type === 'message' ? 'bg-green-500/20 text-green-500' :
+                    'bg-purple-500/20 text-purple-500'
             }`}>
             {type === 'project' ? <Video size={18} /> :
                 type === 'system' ? <Activity size={18} /> :

@@ -3,7 +3,7 @@ import * as THREE from 'three';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import { motion } from 'framer-motion';
-import { Check, Mail, Phone, MapPin, Video, Camera, Mic, Users, Play, Navigation, Image, Star, HelpCircle } from 'lucide-react';
+import { Check, Mail, Phone, MapPin, Play } from 'lucide-react';
 import { useData } from '../context/DataContext';
 import * as LucideIcons from 'lucide-react';
 

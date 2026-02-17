@@ -1,6 +1,6 @@
-import React, { InputHTMLAttributes, ButtonHTMLAttributes, ReactNode } from 'react';
+import type { InputHTMLAttributes, ButtonHTMLAttributes, ReactNode, ComponentType } from 'react';
 import clsx from 'clsx';
-import { Loader2 } from 'lucide-react';
+import { Loader2, type LucideIcon } from 'lucide-react';
 
 // --- Card Component ---
 export const Card = ({ children, className }: { children: ReactNode; className?: string }) => (
@@ -49,7 +49,7 @@ export const TextArea = ({ label, className, ...props }: TextAreaProps) => (
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     variant?: 'primary' | 'secondary' | 'danger' | 'ghost';
     isLoading?: boolean;
-    icon?: React.ElementType;
+    icon?: ComponentType<{ size?: number; className?: string }> | LucideIcon;
 }
 
 export const Button = ({ variant = 'primary', isLoading, icon: Icon, className, children, ...props }: ButtonProps) => {

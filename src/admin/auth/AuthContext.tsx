@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+import { createContext, useContext, useState, useEffect, type ReactNode } from 'react';
 import { loginWithGoogle } from '../../services/api';
 import type { User } from '../../services/api';
 import toast from 'react-hot-toast';

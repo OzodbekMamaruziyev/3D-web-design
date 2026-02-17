@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, ReactNode } from 'react';
+import { createContext, useContext, useState, type ReactNode } from 'react';
 import { initialData } from '../admin/data/initialData';
 import toast from 'react-hot-toast';
 
